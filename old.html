@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="./style/About.css">
+    <title>Prathamesh Portfolio</title>
+    <link rel="stylesheet" href="./style/index.css">
 </head>
 <body>
     <header>
@@ -44,10 +44,18 @@
         <h3>Hello, My Name is</h3>
         <h1>Prathamesh Vinayak Chavan</h1>
         <h2>I'am a Full Stack Web Developer</h2>
-    </div>
-
+    </div> 
+    <a href=" "></a>
     
 </body>
 </html>
 
-<script src="./script/About.js"></script>
+<script>
+    let hamburger = document.querySelector(".hamburger");
+    hamburger.onclick= function(){
+        let navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    }
+</script>
+
+<script src="./script/index.js"></script>
