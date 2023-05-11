@@ -81,6 +81,7 @@
     height: 19px;
     color: white;
     cursor: pointer;   
+    display: none;
 }
 
 #check{
@@ -127,7 +128,95 @@
 }
 
 /* media queries */
+
+ @media(max-width : 1190px ){
+    #hero{
+        height: 100vh;
+        width: 1005;
+    }
+
+    #navbar #nav-menu ul li a{
+        display: block;
+    }
+
+    .heading h1{
+        position : relative;
+        bottom: 100px;
+    }
+
+    .heading p{
+        font-size: 1rem;
+        position: relative;
+        bottom: 100px;
+    }
+
+    .cta{
+        position: absolute;
+        top: 2%;
+    }
+
+    #navbar #nav-menu {
+        position: absolute;
+        left: 59vw;
+    }
+} 
+
+
 /* 
-@media(max-width : 1390px ){
-    
-} */
+@media(max-width: 890px) {
+    #hero{
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+    }
+
+    #navbar #nav-menu ul{
+        position: fixed;
+        width: 70%;
+        height: 100vh;
+        margin: 0 100px;
+        border:  solid 1.5px rgba(255,255,255,0.3);
+        background-color: rgba(255,255,255,0.2);
+        top: 85px;
+        left: 110%;
+        border-radius: 9px;
+        backdrop-filter: blur(Spx);
+        text-align: center;
+        display: block;
+        transition: all .5s;
+    }
+
+    #navbar #nav-menu ul li{
+        margin-top: 70px;
+    }
+
+    #navbar #nav-menu ul li a{
+        padding: 40px 0;
+        font-size:1.5em;
+        color: white;
+
+    }
+
+    #navbar #nav-menu ul li a:hover{
+        color: white;
+        transition: all .5s;
+    }
+
+    #check:checked ~ ul{
+        left: 26%;
+    }
+
+    #check{
+        display: none;
+    }
+
+    .checkbtn img{
+        display: block;
+        position: absolute;
+        left: 25vw;
+
+    }
+
+
+}  */
