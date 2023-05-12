@@ -10,13 +10,16 @@
     <link rel="stylesheet" href="./style/index2.css">
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
     <div id="hero">
-        <header class="header"> 
+        <header class="navbar"> 
 
-            <a href="#" class="logo">Portfolio</a>
+            <div class="logo">
+                <a href="#">Portfolio</a>
+            </div>
+                
     
             <div id="nav-menu">
                 <ul class="links">
@@ -27,30 +30,55 @@
                     <li><a id="contact" class="nav-link contact" href="">Contact</a></li>
                 </ul>
                 
-                <a class="nav-link resume" class="action_btn" href="">Resume</a>
                 
+            </div>
+            <a class="nav-link resume" id="action_btn" href="">Resume</a>
+
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
             </div>
     
         </header>
 
-        <section class="home"> 
-            <div class="home-content">
+        <div class="dropdown_menu">
+            <li><a id="home" class="active" class="nav-link home" href="">Home</a></li>
+            <li><a id="about" class="nav-link about" class="about section" href="">About</a></li>
+            <li><a id="skills" class="nav-link skills" href="">Skills</a></li>
+            <li><a id="projects" class="nav-link projects" href="">Projects</a></li>
+            <li><a id="contact" class="nav-link contact" href="">Contact</a></li>
+            <li><a class="nav-link resume" id="action_btn" href="">Resume</a></li>
+        </div>
+
+        <section class="main-set"> 
+            <div class="heading">
                 <h1>Hey I'am Prathamesh Chavan</h1>
                 <p>Java Back End Developer</p>
-                <div class="btn-box">
+                <div class="cta">
                     <a href="#">About Me</a>
                 </div>
-            </div>
-
-            <div class="home-sci">
-                <a href="#"><i class='bx bxl-twitter'></i></a>
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class='bx bxl-github'></i></a>
             </div>
         </section>
     </div>
 
+    <!-- navbar completed here -->
     
 
 </body>
 </html>
+
+<script>
+   const toggleBtn = document.querySelector('.toggle_btn');
+    const toggleBtnIcon = document.querySelector('.toggle_btn i');
+    const dropDownMenu = document.querySelector('.dropdown_menu');
+
+    toggleBtn.addEventListener('click', function() {
+        dropDownMenu.classList.toggle('open');
+        // console.log("here");
+
+        const isOpen= dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    });
+</script>
