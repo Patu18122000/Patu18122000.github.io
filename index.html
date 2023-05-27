@@ -4,49 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prathamesh Portfolio</title>
 
-    <link rel="stylesheet" href="./style/index.css">
+    <title>Portfolio</title>
+    
+    <link rel="stylesheet" href="./style/index2.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
-    <!-- https://preview.themeforest.net/item/dew-personal-portfolio-template/full_screen_preview/21233334?_ga=2.240092865.37086428.1678737063-1586021966.1678737063 -->
-
-   <!-- Navbar Section start -->
-
-    <!-- <section id="hero">
-        
-        <div class="logo">
-            <h1 class="logo_text"><span>P</span><span>ortfolio</span></h1>
-        </div>
-
-        <nav id="navbar">
-            <div id="nav-menu">
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn"> <img src="https://tse2.mm.bing.net/th?id=OIP.Mq7LcIh4NXcjgDMY9pGPiQHaE8&pid=Api&P=0" alt=""></label>
-
-                <ul>
-                    <li><a id="home" class="nav-link home" href="">Home</a></li>
-                    <li><a id="about" class="nav-link about" class="about section" href="">About</a></li>
-                    <li><a id="skills" class="nav-link skills" href="">Skills</a></li>
-                    <li><a id="projects" class="nav-link projects" href="">Projects</a></li>
-                    <li><a id="contact" class="nav-link contact" href="">Contact</a></li>
-                    <li><a class="nav-link resume" href="">Resume</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <div class="main-set">
-            <div class="heading">
-                <h1>Hey I'am Prathamesh Chavan</h1>
-                <p>Java Back End Developer</p>
-                <a href="#" type="button" class="cta">About Me</a>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Navbar section Close -->
-
     <div id="hero">
         <header class="navbar"> 
 
@@ -57,12 +23,11 @@
     
             <div id="nav-menu">
                 <ul class="links">
-                    <li><a id="home" class="nav-link home" href="">Home</a></li>
+                    <li><a id="home" class="active" class="nav-link home" href="">Home</a></li>
                     <li><a id="about" class="nav-link about" class="about section" href="">About</a></li>
                     <li><a id="skills" class="nav-link skills" href="">Skills</a></li>
                     <li><a id="projects" class="nav-link projects" href="">Projects</a></li>
                     <li><a id="contact" class="nav-link contact" href="">Contact</a></li>
-                    <!-- <li><a class="nav-link resume" href="">Resume</a></li> -->
                 </ul>
                 
                 
@@ -94,5 +59,26 @@
             </div>
         </section>
     </div>
+
+    <!-- navbar completed here -->
+    
+
 </body>
 </html>
+
+<script>
+   const toggleBtn = document.querySelector('.toggle_btn');
+    const toggleBtnIcon = document.querySelector('.toggle_btn i');
+    const dropDownMenu = document.querySelector('.dropdown_menu');
+
+    toggleBtn.addEventListener('click', function() {
+        dropDownMenu.classList.toggle('open');
+        // console.log("here");
+
+        const isOpen= dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    });
+</script>
