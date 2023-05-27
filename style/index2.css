@@ -206,9 +206,11 @@ a{
 
 
 
+/* About me start here */
 
-
-
+.about__img{
+    width: 100px;
+}
 
 
 
