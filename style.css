@@ -466,7 +466,7 @@ section .title::after {
 }
 .project .carousel .card:hover {
   background:  #02225a;
-  color: #000;
+  color: white;
   /* change */
 }
 .project .carousel .card .box {
@@ -803,11 +803,28 @@ footer span a:hover {
     font-size: 23px;
     line-height: 38px;
   }
+
+  #github_stats_css{
+    margin-bottom: -70px;
+    width: 400px; 
+    margin:auto
+  }
+
+  #github-stats-card{
+    width: 300px;
+  }
+
+  #github-streak-stats{
+    width: 400px;
+    margin:auto
+  }
 }
 
 
 /* github stats css */
 
-#github_stats_css h2{
-  text-align: center;
+#github_stats_css{
+  margin-bottom: -70px;
+  
 }
+

@@ -76,4 +76,10 @@ $(document).ready(function () {
   // GitHubCalendar(".calendar", "PATU18122000");
 
   // GitHubCalendar(".calendar", "PATU18122000", { responsive: true });
-  
+//   GitHubCalendar(".calendar", "PATU18122000", {
+//     responsive: true,
+//     global_stats: false,
+//     tooltips: true,
+// });
+
+
