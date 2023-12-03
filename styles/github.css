@@ -1,0 +1,108 @@
+
+
+.gitdiv{
+    background-color: rgb(250, 255, 255);
+    padding: 30x;
+    /* margin-top: 40px; */
+}
+.react-activity-calendar{
+/* margin-top: 30px; */
+padding: 30px;
+}
+
+/* Style for GitHub streak */
+.github-streak {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .git-img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
+  }
+  
+  /* Style for GitHub top languages */
+  .github-top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  #github-top-langs {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  
+  /* Style for GitHub stats */
+  .github-stats {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  #github-stats-card {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    
+  }
+  
+  /* Media query for small screens (up to 576px) */
+  @media (max-width: 576px) {
+    .github-streak, .github-top, .github-stats {
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      margin: auto;
+      margin-top: 10px;
+    }
+  }
+  
+  /* Media query for medium screens (between 577px and 768px) */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .github-streak, .github-top, .github-stats {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .git-img, #github-top-langs, #github-stats-card {
+      flex-basis: calc(50% - 10px);
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Media query for large screens (between 769px and 992px) */
+  @media (min-width: 769px) and (max-width: 992px) {
+    .github-streak, .github-top, .github-stats {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .git-img, #github-top-langs, #github-stats-card {
+      flex-basis: calc(33.33% - 10px);
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Media query for extra large screens (above 993px) */
+  @media (min-width: 993px) {
+    .github-streak, .github-top, .github-stats {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .git-img, #github-top-langs, #github-stats-card {
+      flex-basis: auto;
+      margin-bottom: 0;
+    }
+  }
+  
